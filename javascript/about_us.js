@@ -37,8 +37,8 @@ function validate(){
     return false;
 }
 
-if(message.length<100){
-    text="Please Enter more than 100 Characters";
+if(message.length<26){
+    text="Please Enter more than 25 Characters";
     error_message.innerHTML=text;
     document.getElementById("message").focus();
     return false;
