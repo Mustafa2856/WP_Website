@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 #navbar {
   display: flex; /*Using FlexBox*/
@@ -114,8 +118,11 @@
 
 #services .box img {
   height: 310px;
-  margin: 7px 7px;
   display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #services .box p {
   font-family: "Bree Serif", serif;
@@ -469,3 +476,36 @@
  }
 
  /* end of css for contact us page*/
+
+ /* Media Queries */
+
+ /* Big Landscape Tablets, Laptops and Desktops  */
+
+ @media (min-width: 1200px){
+
+ }
+
+ /* Tablet,Landscape, Low Resolution Laptop and Desktop */
+
+ @media (max-width: 990px){
+
+
+ }
+
+ /* Portrait Tablet, E-Readers Kindle */
+
+ @media (max-width: 800px){
+
+}
+
+ /* SmartPhones, Android Phones, LandScape iPhone */
+
+ @media (max-width: 600px){
+
+}
+
+ /* SmartPhones, Portrait iPhone, Portrait 480x320 phones (Android) */
+
+ @media (max-width: 480px){
+
+}
