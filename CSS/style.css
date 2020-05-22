@@ -407,4 +407,62 @@
      background-position: 0 0;
     
  }
+ .container{
+   padding-bottom: 30px;
+ }
+ .wrapper{
+   position:absolute;
+   width:100%;
+   max-width:450px;
+  
+   
+   
+
+ }
+ .wrapper h2{
+   text-align:center;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+ }
+ .wrapper .input_field,.wrapper .abt_us_btn{
+   margin-bottom: 10px;
+   padding-right:18px;
+ }
+ .wrapper .input_field input[type="text"],
+ .wrapper .input_field input[type="email"],
+ .wrapper .input_field textarea{
+   width:100%;
+   border:1px solid ;
+   border-radius: 5px;
+   padding:5px;
+
+ }
+
+ .wrapper .input_field textarea{
+   height:80px;
+  resize: none;
+ }
+ .wrapper  .abt_us_btn input[type="submit"]{
+   border:0 ;
+   margin-top:10px;
+   
+   padding:8px;
+   width:100%;
+   background:rgb(32, 32, 221);
+   padding-right: 10px;
+   border-radius: 5px;
+   cursor:pointer;
+   margin-bottom: 20px;
+ }
+ .wrapper #error_message{
+   margin-bottom: 20px;
+  
+   background:#fe8b8e;
+   text-align: center;
+   font-size:14px;
+   transition: all 0.5% ease;
+   
+   margin-right: 18px;
+ }
  /* end of css for contact us page*/
