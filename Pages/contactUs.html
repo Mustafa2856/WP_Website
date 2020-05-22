@@ -1,43 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      function validate(){
-       var x=document.contact.name.value;
-       var y=document.contact.email.value;
-       var z=document.contact.mobile;
-       var a=document.contact.subject.value;
-       var b=document.contact.content.value;
-       
-       if(x==""){
-          alert("enter your name");
-          document.contact.name.focus();
-          return false;
-        }
-        if(y==""&&z.value==""){
-          alert("enter at least anyone mobile number or email");
-          document.contact.email.focus();
-          return false;
-        }
-        if(/*z.length<10||z.length>10 ||*/ isNaN(z.value)){
-          alert("enter your mobile number properly");
-          document.contact.mobile.focus();
-          return false;
-        }
-        if(a==""){
-          alert("enter the Subject");
-          document.contact.name.focus();
-          return false;
-        }
-        if(b==""){
-          alert("enter the description");
-          document.contact.content.focus();
-          return false;
-        }
-        alert("we will try to contact you soon.");
-      }
-
-    </script>
+  
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../CSS/fontawesome-free-5.6.3-web/css/all.css">
+  <script src="../javascript/about_us.js"></script>
    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
   </head>
   <body>
@@ -63,122 +27,116 @@
       <ul>
         <li class="item"><a href="../index.html">Home</a></li>
         <li class="item"><a href="menupage.html">Special Menu</a></li>
-        <li class="item"><a href="#">About Us</a></li>
-        <li class="item"><a href="#">Contact Us</a></li>
+        <li class="item"><a href="about_us.html">About Us</a></li>
+        <li class="item"><a href="contactUs.html">Contact Us</a></li>
         <li class="item"><a href="review.html">Reviews</a></li>
       </ul>
     </nav>
     <div class=" top_contact">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-lg-12">
-					<center><h1>Contact Us</h1></center>
-				</div>
-			</div>
-		</div>
-  </div>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-        <center>
-          <p > We are always here to help. If you have requirements/Quries about our services; 
-            fill up the contact form below and we'll do our best to reply within next working
-             day alternatively simply pickup the phone and give us a call.   </p>
-             <hr>
-        </div>
-      </center>
-      </div>
+		    <div class="container text-center">
+			      <div class="row">
+				        <div class="col-lg-12">
+					          <center><h1>Contact Us</h1></center>
+				        </div>
+			      </div>
+		    </div>
     </div>
+  <section>
+     <div class="container">
+         <div class="row">
+             <div class="col-12">
+                <center>
+                     <p > We are always here to help. If you have requirements/Queries about our services; 
+                           Fill up the contact form below and we'll do our best to reply within next working
+                             day alternatively simply pickup the phone and give us a call.</p>
+                    <hr>
+                  </center>
+              </div>
+          </div>
+      </div>
 </section>
-<section class="form-section">
-  <div class="container">
-    <div class="row">
-    <div class="col-md-6">
-      <form action="" name="contact" >
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <input name="name" class="form-control" placeholder="Name">
-          </div>
 
-          <div class="form-group col-md-6">
-            <input name="email" class="form-control" placeholder="Email">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <input name="mobile" class="form-control" placeholder="Contact Number">
-          </div>
-
-          <div class="form-group col-md-6">
-            <select name="country" class="form-control" placeholder="country">
-              <option >India</option>
-              <option >USA</option>
-              <option >UK</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <input name="subject" class="form-control" placeholder="Subject">
-          </div>
-
-          
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <textarea name="content"   rows="5" class="form-control"></textarea>
-          </div>
-
-          
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-12 text-center">
-            <button type="submit" onclick="return validate()" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+<!--form-->
+<section >
+   <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="wrapper"> 
+            <h2> Contact Us</h2>
+           <div id="error_message">
+               <p class="error"></p>
             </div>
-          </div>
-          
-          
+
+           <form id="contact_us" onsubmit="return validate()">
+       
+               <div class="input_field">
+                   <input type="text" placeholder="Name" id="name">
+               </div>
+     
+              <div class="input_field">
+                  <input type="email" placeholder="Email" id="email">
+              </div>
+      
+              <div class="input_field">
+                  <input type="text" placeholder="Mobile Number" id="mobile">
+              </div>
+      
+              <div class="input_field">
+                    <input type="text" placeholder="Subject" id="subject">
+              </div>
+      
+              <div class="input_field">
+                    <textarea type="text" placeholder="Message" id="message"></textarea>
+               </div>
+      
+               <div class="abt_us_btn">
+                  <input type="submit" name="Send Message" id="submit">
+                </div>
+            </form>
         </div>
+     </div>
         
          
-      </form>
-      <div class="col-md-6 address">
-        <h5>Call Us / WhatsApp</h5>
-        <p><a href="tel:+919090909090"><i class="fas fa-phone"></i> +91 993 234 3456 </a><br>
-        </p>
-        <h5>Email / Website</h5>
-        <p>
-           <a href="mailto:xyz@gmail.com"><i class="fas fa-envelope"></i> restaurant_name@gmail.com</a><br>
-           <a href="https://simplesnippets.tech/"><i class="fas fa-globe"></i></i> www.restaurant name.com </a>
+      <div class="col-md-6 ">
+            <h5>Call Us / WhatsApp</h5>
+               <p><a href="tel:+919090909090"><img src="../Pictures/call.png" height="25px" width="25px">+91 993 234 3456 </a><br>
+                </p>
 
-        </p>
-        <h5>Working hours</h5>
-          <p>Monday: Closed</p>
-          <p>Tue-Wed : 9:Am - 10PM</p>
-            <p>Thu-Fri : 9:Am - 10PM</p>
-            <p>Sat-Sun : 5:PM - 10PM</p>
+             <h5>Email / Website</h5>
+                 <p>
+                  <a href="mailto:xyz@gmail.com"><img src="../Pictures/mail.jpg" height="25px" width="25px">  restaurant_name@gmail.com</a><br>
+                  <a href="../index.html"><img src="../Pictures/web.jpg" height="25px" width="25px">  www.restaurant name.com </a>
+
+                </p>
+                  <h5>Working hours</h5>
+          
+                  <p>Monday: Closed</p>
+        
+                  <p>Tue-Wed : 9:Am - 10PM</p>
+        
+                  <p>Thu-Fri : 9:Am - 10PM</p>
+        
+                  <p>Sat-Sun : 5:PM - 10PM</p>
            
         
-        <h5>Address</h5>
-        <p>
-          Near SVNIT College,Vesu,Surat-395009
-        </p>
-     </div>
+                  <h5>Address</h5>
+                <p>
+          
+                  Near SVNIT College,Vesu,Surat-395009
+       
+                </p>
+     
+        </div>
          
-      </div>
-    </div>
-
     
-    </div>
-  </div>
+  
 
-</section>
+      </div><!--row-->
+  </div><!--container-->
 
-<iframe src="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwyykyMjZg9GItLsvLLAEALkEFPA&q=svnit&rlz=1C1HIJA_enIN735IN735&oq=sv&aqs=chrome.1.69i57j46j0l3j69i60l3.4138j0j7&sourceid=chrome&ie=UTF-8"width="100%" height="300px" frameborder="0"></iframe>
+</section><!--end of form-->
+
+
     <!-- Start Footer -->
     <footer class="footer-area bg-f">
       <div class="container">
@@ -242,4 +200,4 @@
    
   </body>
 </html>
- src="/maps/vt/data=zlBzHEmChAhef1i6tOvO036m7w37qOEis0St9tJmXg3fnXsZ1WqpZ6xrXekApXkYnuZXC7fnlZkieNEe0Nk6RTATBfb13FlppmE_cvBplnPbkSARDfubUNQ--BInA548Ic1dexeAY9PlqX0oWlu_Y79loNRSm4fqip7S5AJl5rcajD9Q8fdR" 
+
