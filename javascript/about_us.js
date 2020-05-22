@@ -43,7 +43,7 @@ if(message.length<26){
     document.getElementById("message").focus();
     return false;
 }
-alert("Form Submitted Successfully ");
+alert("Form Submitted Successfully & Our Customer Care will Solve your Query within 24 Hours");
 return true;
 
 }
