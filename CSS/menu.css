@@ -146,4 +146,38 @@
 img {
   height: 200px;
   width: 300px;
+} 
+
+#bill{
+	margin-top: 50px;
+}
+
+#orderbtn{
+	font-size:1.3rem;
+	margin-right:10%;
+	margin-top: 30px;
+	float: right;
+	display: block;
+	border-radius:25px;
+	background-color: orange;
+	padding:10px 10px;
+}
+
+#heading{
+	background-color: orange;
+	font-size: 1.4rem;
+}
+
+#itemlist{
+	font-size:1.2rem;
+	background-color: lightgoldenrodyellow;
+}
+
+#totalp{
+	font-size:1.2rem;
+	background-color: lightgoldenrodyellow;
+}
+
+#order{
+	background:url(../Pictures/stir-fry-noodles.jpg) no-repeat center center/cover;
 }
