@@ -5,15 +5,17 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     	<title>Name_of_Restaurant | UrbanSpice.com</title>
     	<link rel="stylesheet" href="../CSS/style.css" />
+    	<link rel="stylesheet" href="../CSS/menu.css" />
     	<link rel="stylesheet" href="../CSS/bootstrap.min.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
+    <script src="../javascript/ordercontrol.js"></script>
   	</head>
   
-  <body>
+  <body id="main">
   	<nav id="navbar">
   		<div id="logo">
         	<img
@@ -53,95 +55,97 @@
     
     <section id="northindian" class="course-menu">
     	<center><div class="course-head">
-    		<center>North Indian</center>
+    		<a href="#course-menu"><center>North Indian</center></a>
     	</div>
     	<div class="item">
-    		Some item
+    		Pav bhaji<button class="add" onclick="a(0,0)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Biryani<button class="add" onclick="a(0,1)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Chole bhature<button class="add" onclick="a(0,2)">+</button>
     	</div>
     	<div class="item">
-    		Some item
-    	</div><center>
+    		Samosa<button class="add" onclick="a(0,3)">+</button>
+    	</div></center>
     </section>
     
     <section id="southindian" class="course-menu">
     	<center><div class="course-head">
-    		<center>South Indian</center>
+    		<a href="#course-menu"><center>South Indian</center></a>
     	</div>
     	<div class="item">
-    		Some item
+    		Dosa<button class="add" onclick="a(1,0)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Uttapamma<button class="add" onclick="a(1,1)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Idli<button class="add" onclick="a(1,2)">+</button>
     	</div>
     	<div class="item">
-    		Some item
-    	</div><center>
+    		Medu Vada<button class="add" onclick="a(1,3)">+</button>
+    	</div></center>
     </section>
     
     <section id="italian" class="course-menu">
     	<center><div class="course-head">
-    		<center>Italian</center>
+    		<a href="#course-menu"><center>Italian</center></a>
     	</div>
     	<div class="item">
-    		Some item
+    		Pasta Macroli<button class="add" onclick="a(2,0)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Tortano<button class="add" onclick="a(2,1)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Pizza Margerita<button class="add" onclick="a(2,2)">+</button>
     	</div>
     	<div class="item">
-    		Some item
-    	</div><center>
+    		Pizza cappriciossa<button class="add" onclick="a(2,3)">+</button>
+    	</div></center>
     </section>
     
     <section id="asian" class="course-menu">
     	<center><div class="course-head">
-    		<center>Asian</center>
+    		<a href="#course-menu"><center>Asian</center></a>
     	</div>
     	<div class="item">
-    		Some item
+    		Fried rice<button class="add" onclick="a(3,0)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Noodles<button class="add" onclick="a(3,1)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Manchurian<button class="add" onclick="a(3,2)">+</button>
     	</div>
     	<div class="item">
-    		Some item
-    	</div><center>
+    		Kebab<button class="add" onclick="a(3,3)">+</button>
+    	</div></center>
     </section>
     
     <section id="dessert" class="course-menu">
     	<center><div class="course-head">
-    		<center>Desserts & Drinks</center>
+    		<a href="#course-menu"><center>Desserts & Drinks</center></a>
     	</div>
     	<div class="item">
-    		Some item
+    		Gulab Jamun<button class="add" onclick="a(4,0)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Rasagulla<button class="add" onclick="a(4,1)">+</button>
     	</div>
     	<div class="item">
-    		Some item
+    		Cheese Cake<button class="add" onclick="a(4,2)">+</button>
     	</div>
     	<div class="item">
-    		Some item
-    	</div><center>
+    		Hot chocolate cake<button class="add" onclick="a(4,3)">+</button>
+    	</div></center>
     </section>
     
-    <center><button class="btn" onClick="window.location.href = 'order.html'">Order Now</button></center>
+    <div id="cart" onclick="cartwindow()"><div id="cartvalue"></div></div>
+    
+    <center><button class="btn" onClick="cartwindow()">Order Now</button></center>
     <footer class="footer-area bg-f">
       <div class="container">
         <div class="row">
