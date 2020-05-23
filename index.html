@@ -3,19 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name_of_Restaurant | UrbanSpice.com</title>
+    <title>UrbanSpice.com | Taste of Home</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-    <link rel="stylesheet" media ="screen and (max-width: 1480px)" href="CSS/phone.css" > 
-     <!-- Added Phone.css for Media Query  -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1480px)"
+      href="CSS/phone.css"
+    />
+    <!-- Added Phone.css for Media Query  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" href="Pictures/logo.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/preloader.css" />
   </head>
 
-  <body>
+  <body onload="load()">
+    <div id="loader">
+      <h1 id="h1">Cooking in progress..</h1>
+      <div id="cooking">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div id="area">
+          <div id="sides">
+            <div id="pan"></div>
+            <div id="handle"></div>
+          </div>
+          <div id="pancake">
+            <div id="pastry"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popupmain" style="display: none;">
+      <div id="popup">
+        <h1 id="newsHeading">Subscribe Us</h1>
+        <p>
+          Since You Are Our Loyal Coustomer , We will Share Our Three Secret
+          Recipes. Subscribe to our Dining Newsletter - you will Get Access to
+          Exclusive Recipes Guide Not Available on Website!
+        </p>
+        <input
+          type="email"
+          placeholder="xyz@domain.com"
+          class="emailId"
+          id="email"
+        />
+        <br />
+        <button class="submitId">Join The Master Class</button>
+        <button class="submitId">No Thanks</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#popupmain").css("display", "block");
+        }, 30000);
+      });
+
+      $(".submitId").click(function () {
+        $("#popupmain").css("display", "none");
+      });
+      var preloader = document.getElementById("loader");
+      function load() {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 2000);
+      }
+
+      /*preloader.style.display="none";*/
+      
+    </script>
     <nav id="navbar">
       <div id="logo">
         <img
@@ -35,17 +99,18 @@
           <li class="item"><a href="Pages/review.html">Reviews</a></li>
         </ul>
       </div>
-
     </nav>
 
     <section id="home">
-      <h1 class="h-primary">Welcome to Our Name_of_Restaurant</h1>
+      <h1 class="h-primary">Welcome to Urban Spice</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        amet eius fugiat recusandae?
+        Your special occasion destination Where Indian Food is Served at its
+        Best. We Try to Bring the Pleasure of variety on your plate to A "Just
+        Vow" Movement! This is a luxury restaurant beyond the Boundaries of
+        taste!
       </p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        We’ve got something for everyone.Rain or shine, it’s time to dine!!
       </p>
       <button
         class="btn"
@@ -62,32 +127,30 @@
       <div id="services">
         <div class="box">
           <img src="Pictures/bread-with-soup.jpg" alt="food_item_1" />
-          <h2 class="h-secondary center">Dish 1</h2>
+          <h2 class="h-secondary center">Veg Kolhapuri</h2>
           <p class="center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            deserunt ratione consequuntur quidem, omnis eos eius similique
-            delectus sapiente sunt excepturi culpa, voluptate libero quaerat
-            nemo blanditiis provident ex quam!
+            Veg Kolhapuri is a spicy and tasty mix vegetable curry from
+            Kolhapuri cuisine. It is known for its hot, spicy and pungent
+            flavors and we make it Special to Our Customers. The Royal taste is
+            here to stay!
           </p>
         </div>
         <div class="box">
           <img src="Pictures/pastry.jpg" alt="food_item_2" />
-          <h2 class="h-secondary center">Dish 2</h2>
+          <h2 class="h-secondary center">Dessert</h2>
           <p class="center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            deserunt ratione consequuntur quidem, omnis eos eius similique
-            delectus sapiente sunt excepturi culpa, voluptate libero quaerat
-            nemo blanditiis provident ex quam!
+            Beautiful Cakes for Beautiful Occasions. Where Great Tastes Are A
+            PIECE OF CAKE. Every person is unique, why shouldn’t their cake be?
+            Make your occasion a day to remember at Urban Spice.
           </p>
         </div>
         <div class="box">
           <img src="Pictures/stir-fry-noodles.jpg" alt="food_item_3" />
-          <h2 class="h-secondary center">Dish 3</h2>
+          <h2 class="h-secondary center">Chinese</h2>
           <p class="center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-            deserunt ratione consequuntur quidem, omnis eos eius similique
-            delectus sapiente sunt excepturi culpa, voluptate libero quaerat
-            nemo blanditiis provident ex quam!
+            We serve sumptuous food in a great ambience. You’ve tried the rest,
+            now try the best at Urban Spice. Special Chinese Served for a
+            special Customers to take your celebration to a whole new level!
           </p>
         </div>
       </div>
@@ -100,9 +163,9 @@
           <div class="col-lg-3 col-md-6">
             <h3>About Us</h3>
             <p>
-              Integer cursus scelerisque ipsum id efficitur. Donec a dui
-              fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac
-              lectus a interdum. Vivamus semper posuere dui.
+              Life’s too short for boring food, So Enjoy the Indian delicacies
+              here. We’re always in the mood for food to serve you Delight in
+              every bite.
             </p>
           </div>
           <div class="col-lg-3 col-md-6">
@@ -125,7 +188,7 @@
             <h3>Contact information</h3>
             <p class="lead">Near SVNIT College,Vesu,Surat-395009</p>
             <p class="lead"><a href="#">+91 993 234 3456</a></p>
-            <p><a href="#"> info@Name_of_Restaurant.com</a></p>
+            <p><a href="#"> info@UrbanSpice.com</a></p>
           </div>
           <div class="col-lg-3 col-md-6">
             <h3>Opening hours</h3>
@@ -143,8 +206,8 @@
             <div class="col-lg-12">
               <p class="company-name">
                 All Rights Reserved. &copy; 2020
-                <a href="#">Name_of_Restaurant</a> Design By :
-                <a href="#">SVNIT</a>
+                <a href="#">UrbanSpice</a> Design By :
+                <a href="#">SVNIT_Students</a>
               </p>
             </div>
           </div>
