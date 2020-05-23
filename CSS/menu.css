@@ -12,7 +12,7 @@
 
 #course-menu::before {
   content: "";
-  background: url(../Pictures/pastry.jpg) no-repeat center center/cover;
+  background: url(../Pictures/bgmenu.jpg) no-repeat center center/cover;
   position: absolute;
   top: 0px;
   left: 0px;
