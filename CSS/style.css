@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 #navbar {
   display: flex; /*Using FlexBox*/
@@ -114,8 +118,11 @@
 
 #services .box img {
   height: 310px;
-  margin: 7px 7px;
   display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #services .box p {
   font-family: "Bree Serif", serif;
@@ -301,138 +308,51 @@
 }
 /*Footer Ends*/
 
-/*Menu Page CSS*/
 
-#course-menu {
-  display: flex;
-  flex-direction: column;
-  padding: 3px 200px;
-  height: 740px;
-  justify-content: center;
-  align-items: center;
-}
 
-#course-menu::before {
-  content: "";
-  background: url(../Pictures/pastry.jpg) no-repeat center center/cover;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 800px;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.95;
-}
-
-#course-menu h1{
-  color: white;
-  font-size:3rem;
-  display: block;
-  width: 80%;
-  background-color: gray;
-  border-radius:30px;
-  padding: 10px 10px;
-}
-
-.course{
-  font-size: 1.8rem;
-  margin: 5px;
-}
-
-.course a{
-  color: black;
-  background-color: gold;
-  display: block;
-  width:200px;
-  height:60px;
-  padding: 10px 10px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
-.course a:hover{
-  color: black;
-  background-color: lightgoldenrodyellow;
-}
-
-.course-head{
-  color: white;
-  font-size:3rem;
-  display: block;
-  width: 80%;
-  background-color: gray;
-  border-radius:30px;
-  padding: 10px 10px;
-}
-
-.course-menu .item{
-  color: black;
-  background-color: gold;
-  margin:10px;
-  display: block;
-  width:200px;
-  height:40px;
-  padding: 10px 10px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size:1.4rem;
-}
-
-#northindian{
-  background: url(../Pictures/bread-with-soup.jpg) no-repeat center center/cover;
-}
-
-#southindian{
-  background: url(../Pictures/south-indian.jpeg) no-repeat center center/cover;
-}
-
-#italian{
-  background: url(../Pictures/italian.jpeg) no-repeat center center/cover;
-}
-
-#asian{
-  background: url(../Pictures/asian.jpeg) no-repeat center center/cover;
-}
-
-#dessert{
-  background: url(../Pictures/pastry.jpg) no-repeat center center/cover;
-}
-
+/* ------------------------------------------------------------*/
 /*For Contact Us Page*/
-
 .top_contact{
   background-image: url("../Pictures/contact_us.jpg") ;
    background-repeat: no-repeat;
+   
    position:relative;
-   padding: 250px 0 150px;
-   height: 150px;
-   background-attachment: fixed;
-   background-size: cover;
-   background-position: 0 0; 
- }
+  
+  
+   width:100%;
+   height:200px;
+     background-attachment: fixed;
+     background-size: contain;
+     background-position: 0 0;
 
+    
+ }
+ .message{
+   position:absolute;
+   top:40%;
+   left:40%;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+ }
  .container{
+  
    padding-bottom: 30px;
  }
-
  .wrapper{
    position:absolute;
    width:100%;
    max-width:450px;
  }
-
  .wrapper h2{
    text-align:center;
    margin-bottom: 20px;
    text-transform: uppercase;
    letter-spacing: 3px;
  }
-
  .wrapper .input_field,.wrapper .abt_us_btn{
    margin-bottom: 10px;
    padding-right:18px;
  }
-
  .wrapper .input_field input[type="text"],
  .wrapper .input_field input[type="email"],
  .wrapper .input_field textarea{
@@ -440,16 +360,17 @@
    border:1px solid ;
    border-radius: 5px;
    padding:5px;
+
  }
 
  .wrapper .input_field textarea{
    height:80px;
   resize: none;
  }
-
  .wrapper  .abt_us_btn input[type="submit"]{
    border:0 ;
    margin-top:10px;
+   
    padding:8px;
    width:100%;
    background:rgb(32, 32, 221);
@@ -458,14 +379,105 @@
    cursor:pointer;
    margin-bottom: 20px;
  }
-
  .wrapper #error_message{
    margin-bottom: 20px;
+  
    background:#fe8b8e;
    text-align: center;
    font-size:14px;
    transition: all 0.5% ease;
+   
    margin-right: 18px;
  }
+ @media(max-width:770px){
+  .wrapper{
+    position:relative;
+    width:100%;
+    max-width:450px;
+  }
+  
+ }
 
+ @media(max-width:790px){
+  .top_contact{
+     height: 200px;
+     background-position: 0 100px;
+     width:100%;
+     height:150px;
+      
+              background-size: contain;
+              background-attachment: fixed;
+   
+  }
+  .message .container .row .col-lg-12 h1{
+    font-size: 30px;
+  }
+  *{
+    font-size:15px;
+  }
+  .message {
+    position:absolute;
+    top:30%;
+    left:30%;
+  }
+  .wrapper h2{
+    font-size: 20px;
+  }
+ }
+
+ @media(max-width:490px){
+  .top_contact{
+    
+    background-image: none;
+    height: 100px;
+   
+    
+
+  }
+  
+ }
+/* @media(max-width:490px){
+  .top_contact{
+    
+    padding:25px 0 25px; 
+    height: 50;
+    background-position: 0 75px;
+
+  }
+ }*/
+ 
  /* end of css for contact us page*/
+ /*-------------------------------------------------------*/
+
+ /* Media Queries */
+
+ /* Big Landscape Tablets, Laptops and Desktops  */
+
+ @media (min-width: 1200px){
+
+ }
+
+ /* Tablet,Landscape, Low Resolution Laptop and Desktop */
+
+ @media (max-width: 990px){
+
+
+ }
+
+ /* Portrait Tablet, E-Readers Kindle */
+
+ @media (max-width: 800px){
+
+}
+
+ /* SmartPhones, Android Phones, LandScape iPhone */
+
+ @media (max-width: 600px){
+
+}
+
+ /* SmartPhones, Portrait iPhone, Portrait 480x320 phones (Android) */
+
+ @media (max-width: 480px){
+
+}
