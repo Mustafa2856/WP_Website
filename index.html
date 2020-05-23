@@ -13,9 +13,77 @@
       rel="stylesheet"
     />
     <link rel="icon" href="Pictures/logo.png" type="image/png" />
+    <link rel="stylesheet" href="CSS/preloader.css">
   </head>
 
-  <body>
+  <body   onload="load()">
+    <div id="loader">
+      
+<h1 id="h1">Cooking in progress..</h1>
+<div id="cooking">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div id="area">
+    <div id="sides">
+      <div id="pan"></div>
+      <div id="handle"></div>
+    </div>
+    <div id="pancake">
+      <div id="pastry"></div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div id="popupmain" style="display:none;">
+        <div id="popup">
+            <h1 id="newsHeading">Subscribe Us</h1>
+            <p >
+              Since You Are Our Loyal Coustomer , We will Share Our Three Secret Recipes.
+              Subscribe to our Dining Newsletter - you will Get Access to Exclusive 
+              Recipes Guide Not Available on Website! 
+            </p>
+            <input type="email" placeholder="xyz@domain.com" class="emailId"id="email">
+            <br>
+            <button class="submitId">Join The Master Class</button>
+            <button class="submitId">No Thanks</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        setTimeout(function(){
+          $('#popupmain').css('display','block');
+        },60000);
+
+      });
+ 
+ $('.submitId').click(function(){
+  $('#popupmain').css('display','none');
+ });
+ var preloader=document.getElementById("loader");
+ function load(){
+  setTimeout(() => {
+    preloader.style.display='none';
+  }, 2000);
+      
+
+  
+ }
+
+   
+    /*preloader.style.display="none";*/  
+ //}
+ 
+   
+  
+    
+  
+   
+ 
+    </script>
     <nav id="navbar">
       <div id="logo">
         <img
