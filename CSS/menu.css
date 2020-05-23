@@ -12,11 +12,11 @@
 
 #course-menu::before {
   content: "";
-  background: url(../Pictures/pastry.jpg) no-repeat center center/cover;
+  background: url(../Pictures/bgmenu.jpg) no-repeat center center/cover;
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 800px;
+  height: 968px;
   width: 100%;
   z-index: -1;
   opacity: 0.95;
@@ -141,4 +141,9 @@
   	height:40px;
   	width:40px;
   	cursor: pointer;
+}
+
+img {
+  height: 200px;
+  width: 300px;
 }
