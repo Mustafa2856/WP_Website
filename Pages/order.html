@@ -14,7 +14,7 @@
     />
   	</head>
   
-  <body id="main">
+  <body id="order">
   	<nav id="navbar">
   		<div id="logo">
         	<img
@@ -33,9 +33,21 @@
       	</ul>
     </nav>
     
-    <div id="bill"><table id="itemlist" border="1px solid">
-    </table></div>
-    <button onclick="alert('developers werent paid enought to code this')">Place order</button>
+    <div id="bill">
+    	<center><h1 style="display:block;background-color:gold;width:80%;border-radius:100px;">Cart Items</h1></center>
+    	<center><table id="heading" border="1px solid" width="90%">
+    		<tr>
+    			<th width="70%"><center>Item</center></th>
+    			<th width="15%"><center>Quantity</center></th>
+    			<th width="15%"><center>Price</center></th>
+    		</tr></center>
+    	</table>
+    	<center><table id="itemlist" border="1px solid" width="90%"></table></center>
+    	<center><table id="totalp" border="1px solid" width="90%"></table></center>
+    </div>
+    <div>
+    	<button id="orderbtn" onclick="alert('developers werent paid enought to code this')" style="">Place order</button>
+    </div>
 	<script src="../javascript/order.js"></script>
   </body>
 </html>
