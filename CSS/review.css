@@ -4,10 +4,15 @@
   padding: 0;
 }
 
+body{
+  background-color:lightgoldenrodyellow!important;
+}
+
 /* Navigation Bar */
 #navbar {
   display: flex; /*Using FlexBox*/
   align-items: center;
+  position: relative; 
 }
 
 /* Navigation Bar : Logo and Image */
@@ -22,13 +27,8 @@
 }
 
 /* Navigation Bar : List Styling */
-#navbar {
-  position: relative;
-}
-
 #navbar::before {
   content: "";
-  /*background-color: lightgoldenrodyellow;*/
   position: absolute;
   height: 100%;
   width: 100%;
@@ -61,7 +61,6 @@
   background-color: lightgoldenrodyellow;
 }
 
-
 /* Utility Class */
 .h-primary {
   font-size: 3.5rem;
@@ -69,7 +68,6 @@
   position: relative;
   float: left;
 }
-
 
 #review_section {
   display: flex;
@@ -79,6 +77,7 @@
   justify-content: center;
   align-items: center;
 }
+
 #review_section::before {
   content: "";
   background: url(../Pictures/all-bg.jpg) no-repeat center center/cover;
@@ -108,24 +107,15 @@
   position: relative;
   float: left;
   width: 32%;
-  /*height: 500px;*/
   padding: 2.5%;
   text-align: justify;
   display: flex;
-
-
 }
+
 #review_section div p:hover{
-  
-  color:purple;
-  /*background-image: url(../Pictures/review1.png) ;*/ 
+    color:purple;
   border-radius: 1cm;
-  
 }
-body{
-  background-color:lightgoldenrodyellow!important;
-}
-
 
 /*Footer*/
 .footer-area {
@@ -274,6 +264,7 @@ body{
   font-size: 16px;
 }
 /*Footer Ends*/
+
 /*Media Query*/
 
 /*Some part used from phone.css*/
@@ -281,20 +272,25 @@ body{
   #review_section{
     padding: 0 100px 0 100px;
   }
+
   #review_section div p {
     font-size: 1rem;
   }
+
   body{
     background-image: none;
   }
+
   #navbar::before{
     background-color: lightgoldenrodyellow;
   }
 }
+
 @media(max-width:1250px){
   #review_section{
     padding: 0 20px 0px 20px;
   }
+
   #review_section div p{
     display: block;
     width: 100%;
