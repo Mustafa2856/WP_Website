@@ -351,6 +351,7 @@ html{
    width:100%;
    max-width:450px;
  }
+ 
  .wrapper h2{
    text-align:center;
    margin-bottom: 20px;
@@ -361,6 +362,7 @@ html{
    margin-bottom: 10px;
    padding-right:18px;
  }
+ /* CSS for input elements*/
  .wrapper .input_field input[type="text"],
  .wrapper .input_field input[type="email"],
  .wrapper .input_field textarea{
@@ -370,11 +372,12 @@ html{
    padding:5px;
 
  }
-
+/* CSS for Text Area of form */
  .wrapper .input_field textarea{
    height:80px;
   resize: none;
  }
+ /* CSS for Submit button of form */
  .wrapper  .abt_us_btn input[type="submit"]{
    border:0 ;
    margin-top:10px;
@@ -387,6 +390,7 @@ html{
    cursor:pointer;
    margin-bottom: 20px;
  }
+ /*error message  */
  .wrapper #error_message{
    margin-bottom: 20px;
   
@@ -397,6 +401,7 @@ html{
    
    margin-right: 18px;
  }
+ /*  Media Query*/
  @media(max-width:770px){
   .wrapper{
     position:relative;
