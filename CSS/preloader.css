@@ -1,11 +1,4 @@
-#loader{
-   
-    width:100%;
-    height:200vh;
-    background:white ;
-    z-index:10000;
-    background-color: #ffde6b;
-}
+/*  Script for News letter*/
 #popupmain{
     position:fixed;
     height:100%;
@@ -39,7 +32,7 @@
     margin-top:80px;
     margin-bottom:20px
 }
-.submitId{
+.submitId,.check{
     background-color: gold;
     border: none;
     border-radius: 5px;
@@ -62,7 +55,15 @@ loader {
   overflow: hidden;
   
 }*/
-
+/* CSS for Pre loader*/
+#loader{
+   
+  width:100%;
+  height:200vh;
+  background:white ;
+  z-index:10000;
+  background-color: #ffde6b;
+}
 #h1 {
   position: relative;
   margin: 0 auto;
