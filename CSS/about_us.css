@@ -111,3 +111,19 @@
     }
 
   }
+  @media(max-width:355px) {
+    #navbar ul li a{
+      margin: 0px;
+      font-size: 0.7rem;
+    }
+    #about_us::before{
+      height: 70%;
+    }
+    #about_us p{
+      font-size: 1rem;
+    }
+    #about_us_2{
+      padding:0px;
+    }
+
+  } 
