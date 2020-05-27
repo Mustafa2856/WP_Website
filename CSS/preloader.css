@@ -14,7 +14,7 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background-image:url(../Pictures/qt-bg.jpg);
+    background:url(../Pictures/qt-bg.jpg) ;
     background-size: contain;
     box-shadow:1px 2px 5px 3px white;
     text-align:center;
@@ -42,6 +42,11 @@
 }
 #email{
     border-radius: 5px;
+}
+@media(max-width:630px){
+  #popup{
+    width: 80vw;
+  }
 }
 /*-------------------------------------*/
 /*preloader  */
@@ -292,4 +297,12 @@ loader {
     transform: scale(1, 1);
     opacity: .25;
   }
+}
+
+/* media query for pre loader */
+@media(max-width:465px){
+ #area{
+   left: 30%;
+ }
+  
 }
