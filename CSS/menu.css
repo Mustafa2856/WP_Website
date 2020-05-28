@@ -1,3 +1,70 @@
+/* Whole Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex; /*Using FlexBox*/
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+/* Navigation Bar : Logo and Image */
+#navbar .logo {
+  margin: 8px 8px;
+}
+
+#navbar .logo img {
+  margin: 8px 8px;
+  height: "100px";
+  width: "150px";
+}
+
+/* Navigation Bar : List Styling */
+
+#navbar::before {
+  content: "";
+  background-color: lightgoldenrodyellow;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.4rem;
+  margin: 5px;
+}
+
+#navbar ul li a {
+  color: black;
+  background-color: gold;
+  display: block;
+  padding: 10px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: lightgoldenrodyellow;
+}
 
 /*Menu Page CSS*/
 
@@ -30,6 +97,7 @@
   background-color: gray;
   border-radius:30px;
   padding: 10px 10px;
+  text-align: center;
 }
 
 .course{

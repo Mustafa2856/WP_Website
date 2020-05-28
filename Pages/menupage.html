@@ -6,24 +6,56 @@
     	<title>Menu | UrbanSpice.com</title>
     	<link rel="stylesheet" href="../CSS/style.css" />
     	<link rel="stylesheet" href="../CSS/menu.css" />
-		<link rel="stylesheet" href="../CSS/bootstrap.min.css" />
-		<link rel="stylesheet" media ="screen and (max-width: 1480px)" href="../CSS/phone.css" > 
+		<link rel="stylesheet" href="../CSS/mini_style.css" />
+		<link rel="stylesheet" media ="screen and (max-width: 1480px)" href="../CSS/menu_phone.css" > 
 
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
       rel="stylesheet"
     />
-    <script src="../javascript/ordercontrol.js"></script>
+	<script src="../javascript/ordercontrol.js"></script>
+	<link rel="stylesheet" href="../CSS/preloader.css" /><!--css for pre loader-->
   	</head>
   
-  <body id="main">
+  <body id="main" onload="load()">
+	 <!--preloader-->
+	 <div id="loader">
+		<h1 id="h1">Cooking in progress..</h1>
+	  <div id="cooking">
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		   <div class="bubble"></div>
+		  <div class="bubble"></div>
+		<div id="area">
+		  <div id="sides">
+			  <div id="pan"></div>
+			  <div id="handle"></div>
+		  </div>
+		  <div id="pancake">
+			<div id="pastry"></div>
+		  </div>
+		</div>
+	  </div>
+  </div>
+<!--script for preloader -->
+  <script>
+	  //pre loader
+	   var preloader = document.getElementById("loader");
+      function load() {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      }
+  </script>
+  <!--end of preloader-->
   	<nav id="navbar">
-  		<div id="logo">
+  		<div class="logo">
         	<img
           		src="../Pictures/logo.png"
           		alt="UrbanSpice Logo"
           		height="75px"
-          		width="100px"
+				width="100px"
         	/>
       	</div>
       	<ul>
